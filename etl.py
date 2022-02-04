@@ -3,7 +3,6 @@ import glob
 import psycopg2
 import pandas as pd
 from sql_queries import *
-import create_tables
 
 def process_song_file(cur, filepath):
     # open song file
@@ -91,5 +90,4 @@ def main():
 
 
 if __name__ == "__main__":
-    create_tables.main()
     main()
